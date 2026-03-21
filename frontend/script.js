@@ -335,7 +335,7 @@ async function askLLM(userText){
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer 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",
         "HTTP-Referer": "https://stellar-axolotl-3045bb.netlify.app",
         "X-Title": "HealthBot"
       },
