@@ -331,7 +331,7 @@ async function askLLM(userText){
   const langInstruction = languageInstructions[lang] || languageInstructions["english"];
 
   try {
-    const response = await fetch("https://nirogbot-backend.onrender.com/api/chat", {
+    const response = await fetch("https://nirogbot.onrender.com/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
