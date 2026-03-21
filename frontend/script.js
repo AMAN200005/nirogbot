@@ -331,18 +331,16 @@ async function askLLM(userText){
   const langInstruction = languageInstructions[lang] || languageInstructions["english"];
 
   try {
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
-        "HTTP-Referer": "https://stellar-axolotl-3045bb.netlify.app",
-        "X-Title": "HealthBot"
-      },
-      body: JSON.stringify({
-        model: "meta-llama/llama-3.2-3b-instruct:free",
-        messages: [
-          {
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer YOUR_GROQ_KEY"
+  },
+  body: JSON.stringify({
+    model: "llama3-8b-8192",
+    messages: [
+      {
             role: "system",
             content: `You are HealthBot, a public health awareness assistant.
 Help users understand symptoms, diseases, prevention and general health queries.
