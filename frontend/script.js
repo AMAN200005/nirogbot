@@ -321,15 +321,6 @@ async function askLLM(userText){
 
   const lang = document.getElementById("language").value;
 
-  const languageInstructions = {
-    "english": "Always respond in English.",
-    "hindi": "हमेशा हिंदी में जवाब दें। (Always respond in Hindi language only.)",
-    "odia": "ସର୍ବଦା ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ। (Always respond in Odia language only.)",
-    "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும். (Always respond in Tamil language only.)"
-  };
-
-  const langInstruction = languageInstructions[lang] || languageInstructions["english"];
-
   try {
     const response = await fetch("https://nirogbot.onrender.com/api/chat", {
       method: "POST",
@@ -337,18 +328,8 @@ async function askLLM(userText){
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        messages: [
-          {
-            role: "system",
-            content: `You are NirogBot, a public health awareness assistant.
-Help users understand symptoms, diseases, prevention and general health queries.
-Keep responses concise, friendly and informative.
-Always remind users to consult a doctor for proper diagnosis.
-Do not prescribe specific medications. Stick to general WHO-approved health guidance.
-${langInstruction}`
-          },
-          { role: "user", content: userText }
-        ]
+        message: userText,
+        language: lang
       })
     });
 
