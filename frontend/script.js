@@ -335,7 +335,7 @@ async function askLLM(userText){
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Authorization": "Bearer YOUR_GROQ_KEY"
+    "Authorization": "Bearer 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"
   },
   body: JSON.stringify({
     model: "llama3-8b-8192",
