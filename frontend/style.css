@@ -130,19 +130,18 @@ body{
 }
 
 /* CHAT MENU */
+
 .chat-menu{
   display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
+  position: fixed;
+  left: 248px;
   background: #1e2340;
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 10px;
   padding: 6px;
-  z-index: 500;
+  z-index: 9999;
   min-width: 140px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-  margin-left: 6px;
 }
 
 .chat-menu.active{

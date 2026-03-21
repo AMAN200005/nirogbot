@@ -336,7 +336,7 @@ async function askLLM(userText){
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Bearer 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",
-        "HTTP-Referer": "http://localhost:8000",
+        "HTTP-Referer": "https://stellar-axolotl-3045bb.netlify.app",
         "X-Title": "HealthBot"
       },
       body: JSON.stringify({
