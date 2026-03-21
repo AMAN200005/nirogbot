@@ -1,3 +1,12 @@
+app.get("/", (req, res) => {
+  res.json({ 
+    status: "NirogBot backend is running!",
+    version: "1.0.0",
+    message: "Ready to serve health queries"
+  });
+});
+
+
 const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
@@ -12,11 +21,11 @@ app.post('/api/chat', async (req, res) => {
   try {
     const { messages, language } = req.body;
 
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const response = await fetch('https://nirogbot.onrender.com/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${GROQ_API_KEY}`
+        'Authorization': `Bearer ${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}`
       },
       body: JSON.stringify({
         model: 'llama3-8b-8192',
