@@ -1,0 +1,528 @@
+{
+  "dengue": {
+    "english": {
+      "symptoms_list": ["high fever", "joint pain", "muscle pain", "rash", "headache", "eye pain", "nausea"],
+      "symptoms": "High fever, severe headache, joint and muscle pain, skin rash, pain behind eyes.",
+      "prevention": "Avoid mosquito bites, remove stagnant water, use mosquito nets and repellents.",
+      "medicine": "Supportive treatment including paracetamol for fever. Avoid aspirin and NSAIDs.",
+      "vaccination": "No routine public vaccination widely implemented."
+    },
+    "hindi": {
+      "symptoms_list": ["तेज बुखार", "जोड़ों में दर्द", "मांसपेशियों में दर्द", "दाने", "सिरदर्द", "आंखों में दर्द", "मतली"],
+      "symptoms": "तेज बुखार, सिरदर्द, जोड़ों और मांसपेशियों में दर्द, त्वचा पर दाने।",
+      "prevention": "मच्छरों से बचें और पानी जमा न होने दें।",
+      "medicine": "पैरासिटामोल दी जाती है। एस्पिरिन से बचें।",
+      "vaccination": "सामान्य टीका उपलब्ध नहीं है।"
+    },
+    "tamil": {
+      "symptoms_list": ["உயர் காய்ச்சல்", "மூட்டு வலி", "தசை வலி", "சரும சிரங்கு", "தலைவலி", "கண் வலி", "குமட்டல்"],
+      "symptoms": "உயர் காய்ச்சல், தலைவலி, மூட்டு மற்றும் தசை வலி, சரும சிரங்கு.",
+      "prevention": "கொசு கடியிலிருந்து பாதுகாப்பு, தேங்கிய நீரை அகற்றுதல்.",
+      "medicine": "பாராசிடமால் வழங்கப்படுகிறது. அஸ்பிரின் தவிர்க்கவும்.",
+      "vaccination": "பொது தடுப்பூசி இல்லை."
+    },
+    "odia": {
+      "symptoms_list": ["ଉଚ୍ଚ ଜ୍ୱର", "ସନ୍ଧି ବେଦନା", "ମାଂସପେଶୀ ବେଦନା", "ଦାଗ", "ମୁଣ୍ଡବେଥା", "ଆଖି ଯନ୍ତ୍ରଣା", "ବାକି"],
+      "symptoms": "ଉଚ୍ଚ ଜ୍ୱର, ମୁଣ୍ଡବିନ୍ଧା, ଗଣ୍ଠି ଓ ମାଂସପେଶୀ ଯନ୍ତ୍ରଣା, ଚର୍ମ ଦାଗ।",
+      "prevention": "ମଶା କାମୁଡ଼ାରୁ ଦୂରେଇ ରୁହନ୍ତୁ, ପାଣି ଜମା ହେବାକୁ ଦିଅନ୍ତୁ ନାହିଁ।",
+      "medicine": "ପାରାସିଟାମଲ୍ ବ୍ୟବହାର। ଏସ୍ପିରିନ୍ ବଚନ୍ତୁ।",
+      "vaccination": "ସାଧାରଣ ଟୀକାକରଣ ବ୍ୟବସ୍ଥା ନାହିଁ।"
+    }
+  },
+
+  "cholera": {
+    "english": {
+      "symptoms_list": ["watery diarrhea", "severe diarrhea", "vomiting", "dehydration", "weakness", "muscle cramps", "diarrhea"],
+      "symptoms": "Severe watery diarrhea, vomiting, rapid dehydration and weakness.",
+      "prevention": "Drink safe water, maintain sanitation, wash hands properly before eating.",
+      "medicine": "ORS and IV fluids in severe cases. Antibiotics under medical supervision.",
+      "vaccination": "Oral cholera vaccines available in outbreak-prone areas."
+    },
+    "hindi": {
+      "symptoms_list": ["पानी जैसा दस्त", "दस्त", "उल्टी", "डिहाइड्रेशन", "कमजोरी", "मांसपेशियों में ऐंठन"],
+      "symptoms": "पानी जैसे दस्त, उल्टी, तेजी से डिहाइड्रेशन और कमजोरी।",
+      "prevention": "सुरक्षित पानी पिएं, स्वच्छता बनाए रखें, हाथ धोएं।",
+      "medicine": "ओआरएस और गंभीर स्थिति में IV तरल। एंटीबायोटिक चिकित्सकीय सलाह पर।",
+      "vaccination": "कुछ क्षेत्रों में मौखिक हैजा टीका उपलब्ध।"
+    },
+    "tamil": {
+      "symptoms_list": ["தண்ணீர் பேதி", "பேதி", "வாந்தி", "நீரிழப்பு", "பலவீனம்", "தசை பிடிப்பு"],
+      "symptoms": "தண்ணீர் போன்ற பேதி, வாந்தி, கடுமையான நீரிழப்பு மற்றும் பலவீனம்.",
+      "prevention": "பாதுகாப்பான குடிநீர் பயன்படுத்தவும், சுகாதாரத்தை பேணவும்.",
+      "medicine": "ORS மற்றும் கடுமையான நிலைகளில் IV திரவம். மருத்துவர் ஆலோசனையில் மருந்துகள்.",
+      "vaccination": "சில பகுதிகளில் வாய்வழி காலரா தடுப்பூசி கிடைக்கிறது."
+    },
+    "odia": {
+      "symptoms_list": ["ପାଣି ଦସ୍ତ", "ଦସ୍ତ", "ବାନ୍ତି", "ଡିହାଇଡ୍ରେସନ୍", "ଦୁର୍ବଳତା", "ମାଂସପେଶୀ ଆଖୁ"],
+      "symptoms": "ପାଣି ଭଳି ଦସ୍ତ, ବାନ୍ତି, ଶୀଘ୍ର ଡିହାଇଡ୍ରେସନ୍ ଓ ଦୁର୍ବଳତା।",
+      "prevention": "ଶୁଦ୍ଧ ପାଣି ପିଉନ୍ତୁ, ପରିଷ୍କାରତା ରକ୍ଷା କରନ୍ତୁ।",
+      "medicine": "ORS ଓ ଗୁରୁତର ସ୍ଥିତିରେ IV ତରଳ। ଡାକ୍ତରଙ୍କ ପରାମର୍ଶରେ ଆଣ୍ଟିବାୟୋଟିକ୍।",
+      "vaccination": "କିଛି ଅଞ୍ଚଳରେ ମୌଖିକ କଲେରା ଟିକା ଉପଲବ୍ଧ।"
+    }
+  },
+
+  "malaria": {
+    "english": {
+      "symptoms_list": ["chills", "sweating", "shivering", "high fever", "nausea", "vomiting", "body ache", "headache"],
+      "symptoms": "High fever with chills, sweating, headache, nausea and body ache.",
+      "prevention": "Use insecticide-treated mosquito nets and repellents. Avoid stagnant water.",
+      "medicine": "Artemisinin-based Combination Therapy (ACT) under medical supervision.",
+      "vaccination": "Limited malaria vaccines being introduced in selected regions."
+    },
+    "hindi": {
+      "symptoms_list": ["ठंड लगना", "पसीना", "कंपकंपी", "तेज बुखार", "मतली", "उल्टी", "शरीर में दर्द", "सिरदर्द"],
+      "symptoms": "ठंड के साथ तेज बुखार, पसीना, सिरदर्द और शरीर में दर्द।",
+      "prevention": "मच्छरदानी और रिपेलेंट का उपयोग करें।",
+      "medicine": "ACT दवाएं चिकित्सकीय देखरेख में।",
+      "vaccination": "सीमित क्षेत्रों में मलेरिया टीका उपलब्ध।"
+    },
+    "tamil": {
+      "symptoms_list": ["குளிர்", "வியர்வை", "நடுக்கம்", "உயர் காய்ச்சல்", "குமட்டல்", "வாந்தி", "உடல் வலி", "தலைவலி"],
+      "symptoms": "குளிருடன் கூடிய காய்ச்சல், வியர்வை, தலைவலி மற்றும் உடல் வலி.",
+      "prevention": "கொசு வலை மற்றும் விரட்டிகளை பயன்படுத்தவும்.",
+      "medicine": "மருத்துவர் மேற்பார்வையில் ACT மருந்துகள்.",
+      "vaccination": "தேர்ந்தெடுக்கப்பட்ட பகுதிகளில் மலேரியா தடுப்பூசி."
+    },
+    "odia": {
+      "symptoms_list": ["ଥଣ୍ଡା", "ଝାଳ", "କଂପ", "ଉଚ୍ଚ ଜ୍ୱର", "ବାକି", "ବାନ୍ତି", "ଶରୀର ବ୍ୟଥା", "ମୁଣ୍ଡବେଥା"],
+      "symptoms": "ଥଣ୍ଡା ସହ ଜ୍ୱର, ଝାଳ, ମୁଣ୍ଡ ବିନ୍ଧା ଓ ଶରୀର ବ୍ୟଥା।",
+      "prevention": "କୀଟନାଶକ ଯୁକ୍ତ ମଶାଦାନି ଓ ରିପେଲେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।",
+      "medicine": "ଡାକ୍ତରଙ୍କ ତତ୍ତ୍ୱାବଧାନରେ ACT ଚିକିତ୍ସା।",
+      "vaccination": "ସୀମିତ ଅଞ୍ଚଳରେ ମ୍ୟାଲେରିଆ ଟିକା ଉପଲବ୍ଧ।"
+    }
+  },
+
+  "covid19": {
+    "english": {
+      "symptoms_list": ["cough", "shortness of breath", "loss of taste", "loss of smell", "sore throat", "body ache", "high fever", "fatigue"],
+      "symptoms": "Fever, cough, breathing difficulty, loss of taste and smell, sore throat.",
+      "prevention": "Wear masks, wash hands regularly, maintain social distance and get vaccinated.",
+      "medicine": "Supportive treatment. Consult doctor for antiviral options.",
+      "vaccination": "Multiple WHO-approved vaccines available including Covishield and Covaxin."
+    },
+    "hindi": {
+      "symptoms_list": ["खांसी", "सांस लेने में कठिनाई", "स्वाद न आना", "गंध न आना", "गले में खराश", "शरीर में दर्द", "तेज बुखार", "थकान"],
+      "symptoms": "बुखार, खांसी, सांस लेने में कठिनाई, स्वाद और गंध की हानि।",
+      "prevention": "मास्क पहनें, हाथ धोएं, सामाजिक दूरी बनाए रखें और टीका लगवाएं।",
+      "medicine": "सहायक उपचार। एंटीवायरल विकल्पों के लिए डॉक्टर से परामर्श करें।",
+      "vaccination": "कोविशील्ड और कोवैक्सिन सहित कई WHO-अनुमोदित टीके उपलब्ध।"
+    },
+    "tamil": {
+      "symptoms_list": ["இருமல்", "மூச்சுத்திணறல்", "சுவை இழப்பு", "வாசனை இழப்பு", "தொண்டை வலி", "உடல் வலி", "உயர் காய்ச்சல்", "சோர்வு"],
+      "symptoms": "காய்ச்சல், இருமல், சுவாச சிரமம், சுவை மற்றும் வாசனை இழப்பு.",
+      "prevention": "மாஸ்க் அணியவும், கைகளை கழுவவும், தடுப்பூசி போடவும்.",
+      "medicine": "ஆதரவு சிகிச்சை. மருத்துவர் ஆலோசனை பெறவும்.",
+      "vaccination": "கோவிஷீல்ட் மற்றும் கோவாக்சின் உட்பட பல தடுப்பூசிகள் உள்ளன."
+    },
+    "odia": {
+      "symptoms_list": ["କାଶ", "ଶ୍ୱାସକଷ୍ଟ", "ସ୍ୱାଦ ହ୍ରାସ", "ଗନ୍ଧ ହ୍ରାସ", "ଗଳା ଯନ୍ତ୍ରଣା", "ଶରୀର ବ୍ୟଥା", "ଉଚ୍ଚ ଜ୍ୱର", "କ୍ଲାନ୍ତି"],
+      "symptoms": "ଜ୍ୱର, କାଶ, ଶ୍ୱାସ ଅସୁବିଧା, ସ୍ୱାଦ ଓ ଗନ୍ଧ ହ୍ରାସ।",
+      "prevention": "ମାସ୍କ ପିନ୍ଧନ୍ତୁ, ହାତ ଧୋଅନ୍ତୁ, ଟୀକା ନିଅନ୍ତୁ।",
+      "medicine": "ସହାୟକ ଚିକିତ୍ସା। ଡାକ୍ତରଙ୍କ ପରାମର୍ଶ ନିଅନ୍ତୁ।",
+      "vaccination": "କୋଭିଶିଲ୍ଡ ଓ କୋଭାକ୍ସିନ ସହ ଅନେକ ଟୀକା ଉପଲବ୍ଧ।"
+    }
+  },
+
+  "dysentery": {
+    "english": {
+      "symptoms_list": ["bloody diarrhea", "mucus in stool", "abdominal pain", "stomach pain", "stomach cramps", "dehydration"],
+      "symptoms": "Bloody or mucus-containing diarrhea, abdominal pain, stomach cramps, fever and dehydration.",
+      "prevention": "Drink clean water, wash hands before eating, maintain food hygiene.",
+      "medicine": "ORS recommended by WHO. Antibiotics may be prescribed under medical supervision.",
+      "vaccination": "No routine vaccine available."
+    },
+    "hindi": {
+      "symptoms_list": ["खूनी दस्त", "मल में बलगम", "पेट दर्द", "पेट में ऐंठन", "निर्जलीकरण"],
+      "symptoms": "खूनी या बलगम युक्त दस्त, पेट दर्द, ऐंठन, बुखार और निर्जलीकरण।",
+      "prevention": "साफ पानी पिएं, खाने से पहले हाथ धोएं, भोजन स्वच्छता बनाए रखें।",
+      "medicine": "WHO ORS की सिफारिश करता है। चिकित्सकीय देखरेख में एंटीबायोटिक्स।",
+      "vaccination": "कोई नियमित टीका उपलब्ध नहीं।"
+    },
+    "tamil": {
+      "symptoms_list": ["இரத்தக்கழிச்சல்", "மலத்தில் சளி", "வயிற்று வலி", "வயிற்றுப் பிடிப்பு", "நீரிழப்பு"],
+      "symptoms": "இரத்தம் அல்லது சளி கலந்த வயிற்றுப்போக்கு, வயிற்று வலி, காய்ச்சல் மற்றும் நீரிழப்பு.",
+      "prevention": "சுத்தமான தண்ணீரைக் குடிக்கவும், கைகளை கழுவவும்.",
+      "medicine": "WHO ORS பரிந்துரைக்கிறது. மருத்துவர் ஆலோசனையில் நுண்ணுயிர் எதிர்ப்பிகள்.",
+      "vaccination": "வழக்கமான தடுப்பூசி எதுவும் இல்லை."
+    },
+    "odia": {
+      "symptoms_list": ["ରକ୍ତାମିଶା ଝାଡ଼ା", "ମଳରେ ଶ୍ଲେଷ୍ମା", "ପେଟ ଯନ୍ତ୍ରଣା", "ପେଟ କାମୁଡ଼ା", "ଡିହାଇଡ୍ରେସନ୍"],
+      "symptoms": "ରକ୍ତ କିମ୍ବା ଶ୍ଲେଷ୍ମା ଯୁକ୍ତ ଝାଡ଼ା, ପେଟ ଯନ୍ତ୍ରଣା, ଜ୍ୱର ଏବଂ ଡିହାଇଡ୍ରେସନ୍।",
+      "prevention": "ଶୁଦ୍ଧ ପାଣି ପିଅନ୍ତୁ, ଖାଇବା ପୂର୍ବରୁ ହାତ ଧୋଅନ୍ତୁ।",
+      "medicine": "WHO ORS ସୁପାରିଶ କରେ। ଡାକ୍ତରୀ ତତ୍ତ୍ୱାବଧାନରେ ଆଣ୍ଟିବାୟୋଟିକ୍।",
+      "vaccination": "କୌଣସି ନିୟମିତ ଟୀକା ଉପଲବ୍ଧ ନାହିଁ।"
+    }
+  },
+
+  "chikungunya": {
+    "english": {
+      "symptoms_list": ["severe joint pain", "joint swelling", "high fever", "muscle pain", "rash", "fatigue"],
+      "symptoms": "Severe joint pain, muscle pain, rash and fatigue with high fever.",
+      "prevention": "Avoid mosquito bites and remove stagnant water.",
+      "medicine": "Supportive care including paracetamol. Avoid aspirin.",
+      "vaccination": "Vaccines under development."
+    },
+    "hindi": {
+      "symptoms_list": ["गंभीर जोड़ों का दर्द", "जोड़ों में सूजन", "तेज बुखार", "मांसपेशियों में दर्द", "दाने", "थकान"],
+      "symptoms": "गंभीर जोड़ों के दर्द, मांसपेशियों में दर्द, दाने और थकान के साथ तेज बुखार।",
+      "prevention": "मच्छरों के काटने से बचें और जमा पानी को हटाएं।",
+      "medicine": "पैरासिटामोल सहित सहायक देखभाल।",
+      "vaccination": "टीके विकासाधीन हैं।"
+    },
+    "tamil": {
+      "symptoms_list": ["கடுமையான மூட்டு வலி", "மூட்டு வீக்கம்", "உயர் காய்ச்சல்", "தசை வலி", "சொறி", "சோர்வு"],
+      "symptoms": "கடுமையான மூட்டு வலி, தசை வலி, சொறி மற்றும் சோர்வுடன் கூடிய உயர் காய்ச்சல்.",
+      "prevention": "கொசு கடியிலிருந்து தவிர்க்கவும் மற்றும் தேங்கிய நீரை அகற்றவும்.",
+      "medicine": "பாராசிடமால் உள்ளிட்ட ஆதரவு சிகிச்சை.",
+      "vaccination": "தடுப்பூசிகள் உருவாக்கத்தில் உள்ளன."
+    },
+    "odia": {
+      "symptoms_list": ["ଗମ୍ଭୀର ସନ୍ଧି ବେଦନା", "ସନ୍ଧି ଫୁଲା", "ଉଚ୍ଚ ଜ୍ୱର", "ମାଂସପେଶୀ ବେଦନା", "ଦାଗ", "କ୍ଲାନ୍ତି"],
+      "symptoms": "ଗମ୍ଭୀର ସନ୍ଧି ବେଦନା, ମାଂସପେଶୀ ବେଦନା, ଦାଗ ଏବଂ କ୍ଲାନ୍ତି ସହିତ ଉଚ୍ଚ ଜ୍ୱର।",
+      "prevention": "ମଶା କାମୁଡ଼ାରୁ ଦୂରେଇ ରୁହନ୍ତୁ ଏବଂ ଜମା ପାଣି ହଟାନ୍ତୁ।",
+      "medicine": "ପାରାସିଟାମଲ୍ ସମେତ ସହାୟକ ଯତ୍ନ।",
+      "vaccination": "ଟୀକା ବିକାଶ ଅଧୀନରେ ଅଛି।"
+    }
+  },
+
+  "polio": {
+    "english": {
+      "symptoms_list": ["sore throat", "muscle weakness", "paralysis", "stiff neck", "leg weakness", "arm weakness"],
+      "symptoms": "Fever, sore throat, headache and muscle weakness; paralysis in severe cases.",
+      "prevention": "Routine immunization and maintaining proper sanitation.",
+      "medicine": "No cure; supportive therapy and rehabilitation.",
+      "vaccination": "OPV and IPV vaccines widely used. Pulse Polio programme in India."
+    },
+    "hindi": {
+      "symptoms_list": ["गले में खराश", "मांसपेशियों में कमजोरी", "पक्षाघात", "गर्दन में अकड़न", "पैरों में कमजोरी", "बाहों में कमजोरी"],
+      "symptoms": "बुखार, गले में खराश, सिरदर्द और मांसपेशियों में कमजोरी; गंभीर मामलों में पक्षाघात।",
+      "prevention": "नियमित टीकाकरण और स्वच्छता।",
+      "medicine": "कोई इलाज नहीं; सहायक चिकित्सा और पुनर्वास।",
+      "vaccination": "ओपीवी और आईपीवी टीके। भारत में पल्स पोलियो कार्यक्रम।"
+    },
+    "tamil": {
+      "symptoms_list": ["தொண்டை வலி", "தசை பலவீனம்", "பக்கவாதம்", "கழுத்து விறைப்பு", "கால் பலவீனம்", "கை பலவீனம்"],
+      "symptoms": "காய்ச்சல், தொண்டை வலி, தலைவலி மற்றும் தசை பலவீனம்; கடுமையான நிகழ்வுகளில் பக்கவாதம்.",
+      "prevention": "வழக்கமான நோய்த்தடுப்பு மற்றும் சுகாதாரம்.",
+      "medicine": "எந்த சிகிச்சையும் இல்லை; ஆதரவு சிகிச்சை மற்றும் மறுவாழ்வு.",
+      "vaccination": "ஓபிவி மற்றும் ஐபிவி தடுப்பூசிகள் பரவலாகப் பயன்படுத்தப்படுகின்றன."
+    },
+    "odia": {
+      "symptoms_list": ["ଗଳା ଯନ୍ତ୍ରଣା", "ମାଂସପେଶୀ ଦୁର୍ବଳତା", "ପକ୍ଷାଘାତ", "ଘାଡ଼ ଆଖୁ", "ଗୋଡ଼ ଦୁର୍ବଳତା", "ହାତ ଦୁର୍ବଳତା"],
+      "symptoms": "ଜ୍ୱର, ଗଳା ଯନ୍ତ୍ରଣା, ମୁଣ୍ଡବେଥା ଏବଂ ମାଂସପେଶୀ ଦୁର୍ବଳତା; ଗମ୍ଭୀର ମାମଲାରେ ପକ୍ଷାଘାତ।",
+      "prevention": "ନିୟମିତ ଟୀକାକରଣ ଏବଂ ସ୍ୱଚ୍ଛତା।",
+      "medicine": "କୌଣସି ଚିକିତ୍ସା ନାହିଁ; ସହାୟକ ଥେରାପି।",
+      "vaccination": "ଓପିଭି ଏବଂ ଆଇପିଭି ଟୀକା ବ୍ୟାପକ ଭାବରେ ବ୍ୟବହୃତ।"
+    }
+  },
+
+  "filaria": {
+    "english": {
+      "symptoms_list": ["swelling of limbs", "leg swelling", "arm swelling", "thickened skin", "swollen lymph nodes", "pain"],
+      "symptoms": "Swelling of limbs with thickened skin, swollen lymph nodes and fever.",
+      "prevention": "Avoid mosquito bites, maintain hygiene and take preventive medicines.",
+      "medicine": "Antifilarial medicines such as Diethylcarbamazine (DEC).",
+      "vaccination": "No vaccine available."
+    },
+    "hindi": {
+      "symptoms_list": ["अंगों में सूजन", "पैरों में सूजन", "बांहों में सूजन", "त्वचा का मोटा होना", "लिम्फ नोड्स में सूजन", "दर्द"],
+      "symptoms": "अंगों में सूजन, त्वचा का मोटा होना और बुखार।",
+      "prevention": "मच्छरों के काटने से बचें और स्वच्छता बनाए रखें।",
+      "medicine": "डाइएथिलकार्बामाज़िन (DEC) जैसी एंटीफाइलेरियल दवाएं।",
+      "vaccination": "कोई टीका उपलब्ध नहीं।"
+    },
+    "tamil": {
+      "symptoms_list": ["உறுப்புகளின் வீக்கம்", "கால் வீக்கம்", "கை வீக்கம்", "தடித்த தோல்", "நிணநீர் கோளாறு", "வலி"],
+      "symptoms": "உறுப்புகளின் வீக்கம், தடித்த தோல் மற்றும் காய்ச்சல்.",
+      "prevention": "கொசு கடியிலிருந்து தவிர்க்கவும் மற்றும் சுகாதாரத்தை பேணவும்.",
+      "medicine": "டைத்தில்கார்பமசின் (DEC) போன்ற ஆன்டிஃபைலேரியல் மருந்துகள்.",
+      "vaccination": "தடுப்பூசி எதுவும் இல்லை."
+    },
+    "odia": {
+      "symptoms_list": ["ଅଙ୍ଗପ୍ରତ୍ୟଙ୍ଗ ଫୁଲା", "ଗୋଡ଼ ଫୁଲା", "ବାହୁ ଫୁଲା", "ମୋଟା ଚମଡ଼ା", "ଲିମ୍ଫ ଗ୍ରନ୍ଥି ଫୁଲା", "ବେଦନା"],
+      "symptoms": "ଅଙ୍ଗପ୍ରତ୍ୟଙ୍ଗ ଫୁଲା, ମୋଟା ଚମଡ଼ା ଏବଂ ଜ୍ୱର।",
+      "prevention": "ମଶା କାମୁଡ଼ାରୁ ଦୂରେଇ ରୁହନ୍ତୁ ଏବଂ ସ୍ୱଚ୍ଛତା ବଜାୟ ରଖନ୍ତୁ।",
+      "medicine": "ଡାଇଥାଇଲକାର୍ବାମାଜିନ୍ (DEC) ଭଳି ଆଣ୍ଟିଫାଇଲେରିଆଲ ଔଷଧ।",
+      "vaccination": "କୌଣସି ଟୀକା ଉପଲବ୍ଧ ନାହିଁ।"
+    }
+  },
+
+  "tuberculosis": {
+    "english": {
+      "symptoms_list": ["persistent cough", "chronic cough", "chest pain", "weight loss", "night sweats", "coughing blood", "fatigue"],
+      "symptoms": "Persistent cough, chest pain, weight loss, night sweats and fever.",
+      "prevention": "Early diagnosis, good ventilation and avoiding close contact with infected persons.",
+      "medicine": "Anti-TB drug regimen including isoniazid, rifampicin, pyrazinamide and ethambutol.",
+      "vaccination": "BCG vaccine used in many countries including India."
+    },
+    "hindi": {
+      "symptoms_list": ["लगातार खांसी", "पुरानी खांसी", "सीने में दर्द", "वजन कम होना", "रात को पसीना", "खून की खांसी", "थकान"],
+      "symptoms": "लगातार खांसी, सीने में दर्द, वजन कम होना, रात को पसीना और बुखार।",
+      "prevention": "शीघ्र निदान, वेंटिलेशन और संक्रमित व्यक्तियों से दूर रहें।",
+      "medicine": "आइसोनियाज़िड, रिफैम्पिसिन सहित एंटी-टीबी दवा आहार।",
+      "vaccination": "भारत सहित कई देशों में बीसीजी टीका।"
+    },
+    "tamil": {
+      "symptoms_list": ["தொடர் இருமல்", "நாள்பட்ட இருமல்", "மார்பு வலி", "எடை இழப்பு", "இரவு வியர்வை", "இரத்த இருமல்", "சோர்வு"],
+      "symptoms": "தொடர் இருமல், மார்பு வலி, எடை இழப்பு, இரவு வியர்வை மற்றும் காய்ச்சல்.",
+      "prevention": "ஆரம்பகால நோயறிதல், காற்றோட்டம் மற்றும் நெருங்கிய தொடர்பைத் தவிர்த்தல்.",
+      "medicine": "ஐசோனியாசிட், ரிஃபாம்பிசின் உள்ளிட்ட ஆன்டி-டிபி மருந்து விதிமுறை.",
+      "vaccination": "இந்தியா உட்பட பல நாடுகளில் பிசிஜி தடுப்பூசி."
+    },
+    "odia": {
+      "symptoms_list": ["ନିରନ୍ତର କାଶ", "ଦୀର୍ଘ କାଶ", "ଛାତି ଯନ୍ତ୍ରଣା", "ଓଜନ ହ୍ରାସ", "ରାତି ଝାଳ", "ରକ୍ତ କାଶ", "କ୍ଲାନ୍ତି"],
+      "symptoms": "ନିରନ୍ତର କାଶ, ଛାତି ଯନ୍ତ୍ରଣା, ଓଜନ ହ୍ରାସ, ରାତି ଝାଳ ଏବଂ ଜ୍ୱର।",
+      "prevention": "ପ୍ରାରମ୍ଭିକ ନିର୍ଣ୍ଣୟ, ଭେଣ୍ଟିଲେସନ୍ ଏବଂ ସଂକ୍ରମିତ ବ୍ୟକ୍ତିଙ୍କଠାରୁ ଦୂରେଇ ରହିବା।",
+      "medicine": "ଆଇସୋନିଆଜିଡ୍, ରିଫାମ୍ପିସିନ୍ ସହ ଆଣ୍ଟି-ଟିବି ଔଷଧ ପଦ୍ଧତି।",
+      "vaccination": "ଭାରତ ସହ ଅନେକ ଦେଶରେ ବିସିଜି ଟୀକା।"
+    }
+  },
+
+  "herpes": {
+    "english": {
+      "symptoms_list": ["blisters", "mouth sores", "cold sores", "genital sores", "itching", "burning sensation"],
+      "symptoms": "Painful blisters or sores on mouth or genital area with itching and burning.",
+      "prevention": "Avoid contact with active sores and maintain personal hygiene.",
+      "medicine": "Antiviral medications such as acyclovir or valacyclovir.",
+      "vaccination": "No approved vaccine available."
+    },
+    "hindi": {
+      "symptoms_list": ["फफोले", "मुँह के छाले", "ठंडे छाले", "जननांग घाव", "खुजली", "जलन"],
+      "symptoms": "मुँह या जननांग क्षेत्र पर दर्दनाक फफोले या घाव।",
+      "prevention": "सक्रिय घावों के संपर्क से बचें और स्वच्छता बनाए रखें।",
+      "medicine": "एसाइक्लोविर या वैलेसाइक्लोविर जैसी एंटीवायरल दवाएं।",
+      "vaccination": "कोई स्वीकृत टीका उपलब्ध नहीं।"
+    },
+    "tamil": {
+      "symptoms_list": ["கொப்புளங்கள்", "வாய் புண்கள்", "குளிர் புண்கள்", "பிறப்புறுப்பு புண்கள்", "அரிப்பு", "எரிச்சல்"],
+      "symptoms": "வாய் அல்லது பிறப்புறுப்பு பகுதியில் வலிமையான கொப்புளங்கள் அல்லது புண்கள்.",
+      "prevention": "செயலில் உள்ள புண்களுடன் தொடர்பைத் தவிர்க்கவும்.",
+      "medicine": "அசைக்ளோவிர் அல்லது வாலசைக்ளோவிர் போன்ற வைரஸ் தடுப்பு மருந்துகள்.",
+      "vaccination": "அங்கீகரிக்கப்பட்ட தடுப்பூசி எதுவும் இல்லை."
+    },
+    "odia": {
+      "symptoms_list": ["ଫୋଟକା", "ପାଟି କ୍ଷତ", "ଥଣ୍ଡା କ୍ଷତ", "ଯୌନାଙ୍ଗ କ୍ଷତ", "ଗଲୁ", "ଜଳାପୋଡ଼ା"],
+      "symptoms": "ପାଟି କିମ୍ବା ଯୌନାଙ୍ଗ ସ୍ଥାନରେ ଯନ୍ତ୍ରଣାଦାୟକ ଫୋଟକା କିମ୍ବା କ୍ଷତ।",
+      "prevention": "ସକ୍ରିୟ କ୍ଷତ ସଂସ୍ପର୍ଶରୁ ଦୂରେଇ ରୁହନ୍ତୁ।",
+      "medicine": "ଆସାଇକ୍ଲୋଭିର କିମ୍ବା ଭାଲାସାଇକ୍ଲୋଭିର ଭଳି ଆଣ୍ଟିଭାଇରାଲ ଔଷଧ।",
+      "vaccination": "କୌଣସି ଅନୁମୋଦିତ ଟୀକା ଉପଲବ୍ଧ ନାହିଁ।"
+    }
+  },
+
+  "hiv": {
+    "english": {
+      "symptoms_list": ["weight loss", "night sweats", "swollen lymph nodes", "chronic diarrhea", "oral thrush", "prolonged fever", "fatigue", "recurring infections"],
+      "symptoms": "Prolonged fever, weight loss, night sweats, swollen lymph nodes, chronic diarrhea and recurring infections.",
+      "prevention": "Use condoms, avoid sharing needles, get tested regularly and take antiretroviral therapy if positive.",
+      "medicine": "Antiretroviral Therapy (ART) — not a cure but controls the virus effectively.",
+      "vaccination": "No vaccine available. Early ART is the best management."
+    },
+    "hindi": {
+      "symptoms_list": ["वजन कम होना", "रात को पसीना", "सूजे लिम्फ नोड्स", "लंबे समय तक दस्त", "बार-बार संक्रमण", "थकान", "लंबे समय तक बुखार"],
+      "symptoms": "लंबे समय तक बुखार, वजन कम होना, रात को पसीना, लिम्फ नोड्स में सूजन और बार-बार संक्रमण।",
+      "prevention": "कंडोम का उपयोग करें, सुइयां साझा न करें, नियमित जांच करवाएं।",
+      "medicine": "एंटीरेट्रोवायरल थेरेपी (ART) — वायरस को नियंत्रित करती है।",
+      "vaccination": "कोई टीका उपलब्ध नहीं। ART सबसे अच्छा प्रबंधन है।"
+    },
+    "tamil": {
+      "symptoms_list": ["எடை இழப்பு", "இரவு வியர்வை", "வீங்கிய நிணநீர் கணுக்கள்", "நாள்பட்ட வயிற்றுப்போக்கு", "மீண்டும் மீண்டும் தொற்றுகள்", "சோர்வு", "நீண்ட காய்ச்சல்"],
+      "symptoms": "நீண்ட காய்ச்சல், எடை இழப்பு, இரவு வியர்வை, வீங்கிய நிணநீர் கணுக்கள் மற்றும் மீண்டும் மீண்டும் தொற்றுகள்.",
+      "prevention": "கருத்தடை சாதனங்கள் பயன்படுத்தவும், ஊசிகளை பகிர வேண்டாம், தொடர்ந்து பரிசோதனை செய்யவும்.",
+      "medicine": "ஆன்டிரெட்ரோவைரல் சிகிச்சை (ART) — வைரஸை கட்டுப்படுத்துகிறது.",
+      "vaccination": "தடுப்பூசி இல்லை. ART சிறந்த மேலாண்மை."
+    },
+    "odia": {
+      "symptoms_list": ["ଓଜନ ହ୍ରାସ", "ରାତି ଝାଳ", "ଲିମ୍ଫ ଗ୍ରନ୍ଥି ଫୁଲା", "ଦୀର୍ଘ ଝାଡ଼ା", "ବାରମ୍ବାର ସଂକ୍ରମଣ", "କ୍ଲାନ୍ତି", "ଦୀର୍ଘ ଜ୍ୱର"],
+      "symptoms": "ଦୀର୍ଘ ଜ୍ୱର, ଓଜନ ହ୍ରାସ, ରାତି ଝାଳ, ଲିମ୍ଫ ଗ୍ରନ୍ଥି ଫୁଲା ଏବଂ ବାରମ୍ବାର ସଂକ୍ରମଣ।",
+      "prevention": "କଣ୍ଡୋମ ବ୍ୟବହାର କରନ୍ତୁ, ଇଞ୍ଜେକ୍ସନ ସୂଆ ଭାଗ କରନ୍ତୁ ନାହିଁ, ନିୟମିତ ପରୀକ୍ଷା କରନ୍ତୁ।",
+      "medicine": "ଆଣ୍ଟିରେଟ୍ରୋଭାଇରାଲ ଥେରାପି (ART) — ଭାଇରସ୍ ନିୟନ୍ତ୍ରଣ କରେ।",
+      "vaccination": "କୌଣସି ଟୀକା ଉପଲବ୍ଧ ନାହିଁ। ART ସର୍ବୋତ୍ତମ ପ୍ରବନ୍ଧନ।"
+    }
+  },
+
+  "typhoid": {
+    "english": {
+      "symptoms_list": ["sustained fever", "high fever", "stomach pain", "weakness", "loss of appetite", "headache", "constipation", "rose spots"],
+      "symptoms": "Sustained high fever, stomach pain, weakness, loss of appetite and headache.",
+      "prevention": "Drink safe water, eat properly cooked food, wash hands and get vaccinated.",
+      "medicine": "Antibiotics such as azithromycin or ciprofloxacin under medical supervision.",
+      "vaccination": "Typhoid conjugate vaccine (TCV) recommended especially for children."
+    },
+    "hindi": {
+      "symptoms_list": ["लगातार बुखार", "तेज बुखार", "पेट दर्द", "कमजोरी", "भूख न लगना", "सिरदर्द", "कब्ज"],
+      "symptoms": "लगातार तेज बुखार, पेट दर्द, कमजोरी, भूख न लगना और सिरदर्द।",
+      "prevention": "सुरक्षित पानी पिएं, ठीक से पका खाना खाएं, हाथ धोएं और टीका लगवाएं।",
+      "medicine": "एजिथ्रोमाइसिन या सिप्रोफ्लोक्सासिन जैसी एंटीबायोटिक्स।",
+      "vaccination": "टाइफाइड कंजुगेट वैक्सीन (TCV) विशेषकर बच्चों के लिए।"
+    },
+    "tamil": {
+      "symptoms_list": ["தொடர் காய்ச்சல்", "உயர் காய்ச்சல்", "வயிற்று வலி", "பலவீனம்", "பசியின்மை", "தலைவலி", "மலச்சிக்கல்"],
+      "symptoms": "தொடர் உயர் காய்ச்சல், வயிற்று வலி, பலவீனம், பசியின்மை மற்றும் தலைவலி.",
+      "prevention": "பாதுகாப்பான தண்ணீர் குடிக்கவும், சமைத்த உணவு சாப்பிடவும், கைகளை கழுவவும்.",
+      "medicine": "அசித்ரோமைசின் அல்லது சிப்ரோஃப்ளோக்சாசின் போன்ற நுண்ணுயிர் எதிர்ப்பிகள்.",
+      "vaccination": "டைஃபாய்டு கான்ஜுகேட் தடுப்பூசி (TCV) குறிப்பாக குழந்தைகளுக்கு."
+    },
+    "odia": {
+      "symptoms_list": ["ନିରନ୍ତର ଜ୍ୱର", "ଉଚ୍ଚ ଜ୍ୱର", "ପେଟ ଯନ୍ତ୍ରଣା", "ଦୁର୍ବଳତା", "ଭୋକ ନ ଲାଗିବା", "ମୁଣ୍ଡବେଥା", "କୋଷ୍ଠକାଠିନ୍ୟ"],
+      "symptoms": "ନିରନ୍ତର ଉଚ୍ଚ ଜ୍ୱର, ପେଟ ଯନ୍ତ୍ରଣା, ଦୁର୍ବଳତା, ଭୋକ ନ ଲାଗିବା ଏବଂ ମୁଣ୍ଡବେଥା।",
+      "prevention": "ଶୁଦ୍ଧ ପାଣି ପିଅନ୍ତୁ, ଭଲ ଭାବରେ ରାନ୍ଧା ଖାଦ୍ୟ ଖାଅନ୍ତୁ, ହାତ ଧୋଅନ୍ତୁ।",
+      "medicine": "ଆଜିଥ୍ରୋମାଇସିନ୍ ବା ସିପ୍ରୋଫ୍ଲୋକ୍ସାସିନ୍ ଆଣ୍ଟିବାୟୋଟିକ୍।",
+      "vaccination": "ଟାଇଫଏଡ୍ କଞ୍ଜୁଗେଟ୍ ଟୀକା (TCV) ବିଶେଷ ଭାବରେ ଶିଶୁମାନଙ୍କ ପାଇଁ।"
+    }
+  },
+
+  "hepatitis": {
+    "english": {
+      "symptoms_list": ["jaundice", "yellow skin", "yellow eyes", "dark urine", "abdominal pain", "nausea", "vomiting", "fatigue", "loss of appetite"],
+      "symptoms": "Jaundice (yellow skin and eyes), dark urine, abdominal pain, nausea and fatigue.",
+      "prevention": "Get vaccinated for Hepatitis B, avoid sharing needles, practice safe sex, drink safe water.",
+      "medicine": "Antiviral medications for Hepatitis B and C. Supportive care for Hepatitis A.",
+      "vaccination": "Hepatitis B vaccine is part of routine immunization in India."
+    },
+    "hindi": {
+      "symptoms_list": ["पीलिया", "पीली त्वचा", "पीली आंखें", "गहरा मूत्र", "पेट दर्द", "मतली", "उल्टी", "थकान", "भूख न लगना"],
+      "symptoms": "पीलिया (पीली त्वचा और आंखें), गहरा मूत्र, पेट दर्द, मतली और थकान।",
+      "prevention": "हेपेटाइटिस बी का टीका लगवाएं, सुइयां साझा न करें, सुरक्षित पानी पिएं।",
+      "medicine": "हेपेटाइटिस बी और सी के लिए एंटीवायरल दवाएं।",
+      "vaccination": "भारत में हेपेटाइटिस बी टीका नियमित टीकाकरण का हिस्सा।"
+    },
+    "tamil": {
+      "symptoms_list": ["மஞ்சள் காமாலை", "மஞ்சள் தோல்", "மஞ்சள் கண்கள்", "இருண்ட சிறுநீர்", "வயிற்று வலி", "குமட்டல்", "வாந்தி", "சோர்வு"],
+      "symptoms": "மஞ்சள் காமாலை (மஞ்சள் தோல் மற்றும் கண்கள்), இருண்ட சிறுநீர், வயிற்று வலி மற்றும் சோர்வு.",
+      "prevention": "ஹெபடைடிஸ் பி தடுப்பூசி போடவும், ஊசிகளை பகிர வேண்டாம்.",
+      "medicine": "ஹெபடைடிஸ் பி மற்றும் சி க்கு வைரஸ் தடுப்பு மருந்துகள்.",
+      "vaccination": "ஹெபடைடிஸ் பி தடுப்பூசி இந்தியாவில் வழக்கமான தடுப்பூசியின் ஒரு பகுதி."
+    },
+    "odia": {
+      "symptoms_list": ["ପୀଳିଆ", "ହଳଦିଆ ଚମଡ଼ା", "ହଳଦିଆ ଆଖି", "ଗାଢ଼ ପ୍ରସ୍ରାବ", "ପେଟ ଯନ୍ତ୍ରଣା", "ବାକି", "ବାନ୍ତି", "କ୍ଲାନ୍ତି"],
+      "symptoms": "ପୀଳିଆ (ହଳଦିଆ ଚମଡ଼ା ଓ ଆଖି), ଗାଢ଼ ପ୍ରସ୍ରାବ, ପେଟ ଯନ୍ତ୍ରଣା ଓ କ୍ଲାନ୍ତି।",
+      "prevention": "ହେପାଟାଇଟିସ ବି ଟୀକା ନିଅନ୍ତୁ, ସୂଆ ଭାଗ କରନ୍ତୁ ନାହିଁ।",
+      "medicine": "ହେପାଟାଇଟିସ ବି ଓ ସି ପାଇଁ ଆଣ୍ଟିଭାଇରାଲ ଔଷଧ।",
+      "vaccination": "ଭାରତରେ ହେପାଟାଇଟିସ ବି ଟୀକା ନିୟମିତ ଟୀକାକରଣର ଅଂଶ।"
+    }
+  },
+
+  "chickenpox": {
+    "english": {
+      "symptoms_list": ["itchy rash", "fluid filled blisters", "red spots", "itching", "fever", "tiredness", "loss of appetite"],
+      "symptoms": "Itchy rash with fluid-filled blisters all over the body, fever and tiredness.",
+      "prevention": "Get vaccinated, avoid contact with infected persons and maintain hygiene.",
+      "medicine": "Antihistamines for itching. Acyclovir in severe cases. Avoid aspirin in children.",
+      "vaccination": "Varicella vaccine is highly effective and recommended for all children."
+    },
+    "hindi": {
+      "symptoms_list": ["खुजलीदार दाने", "तरल भरे फफोले", "लाल धब्बे", "खुजली", "बुखार", "थकान", "भूख न लगना"],
+      "symptoms": "पूरे शरीर पर खुजलीदार दाने, तरल भरे फफोले, बुखार और थकान।",
+      "prevention": "टीका लगवाएं, संक्रमित व्यक्तियों से संपर्क से बचें।",
+      "medicine": "खुजली के लिए एंटीहिस्टामाइन। गंभीर मामलों में एसाइक्लोविर।",
+      "vaccination": "वेरिसेला टीका सभी बच्चों के लिए अत्यधिक प्रभावी।"
+    },
+    "tamil": {
+      "symptoms_list": ["அரிப்பு தடிப்பு", "திரவம் நிறைந்த கொப்புளங்கள்", "சிவப்பு புள்ளிகள்", "அரிப்பு", "காய்ச்சல்", "சோர்வு"],
+      "symptoms": "உடல் முழுவதும் அரிப்பு தடிப்பு, திரவம் நிறைந்த கொப்புளங்கள், காய்ச்சல் மற்றும் சோர்வு.",
+      "prevention": "தடுப்பூசி போடவும், பாதிக்கப்பட்டவர்களிடமிருந்து விலகி இருக்கவும்.",
+      "medicine": "அரிப்புக்கு ஆன்டிஹிஸ்டமின்கள். கடுமையான நிகழ்வுகளில் அசைக்ளோவிர்.",
+      "vaccination": "வேரிசெல்லா தடுப்பூசி அனைத்து குழந்தைகளுக்கும் பரிந்துரைக்கப்படுகிறது."
+    },
+    "odia": {
+      "symptoms_list": ["ଗଲୁ ଦାଗ", "ତରଳ ଫୋଟକା", "ଲାଲ ଦାଗ", "ଗଲୁ", "ଜ୍ୱର", "କ୍ଲାନ୍ତି"],
+      "symptoms": "ସାରା ଶରୀରରେ ଗଲୁ ଦାଗ, ତରଳ ଫୋଟକା, ଜ୍ୱର ଓ କ୍ଲାନ୍ତି।",
+      "prevention": "ଟୀକା ନିଅନ୍ତୁ, ସଂକ୍ରମିତ ବ୍ୟକ୍ତିଙ୍କ ସଂସ୍ପର୍ଶ ଏଡ଼ାନ୍ତୁ।",
+      "medicine": "ଗଲୁ ପାଇଁ ଆଣ୍ଟିହିଷ୍ଟାମିନ। ଗୁରୁତର ସ୍ଥିତିରେ ଆସାଇକ୍ଲୋଭିର।",
+      "vaccination": "ଭ୍ୟାରିସେଲା ଟୀକା ସବୁ ଶିଶୁଙ୍କ ପାଇଁ ଅତ୍ୟନ୍ତ ପ୍ରଭାବଶାଳୀ।"
+    }
+  },
+
+  "measles": {
+    "english": {
+      "symptoms_list": ["red rash", "koplik spots", "runny nose", "red eyes", "cough", "high fever", "sensitivity to light"],
+      "symptoms": "High fever, cough, runny nose, red eyes and a characteristic red rash spreading from face to body.",
+      "prevention": "MMR vaccine is the most effective prevention. Avoid contact with infected persons.",
+      "medicine": "Supportive care, Vitamin A supplements. No specific antiviral.",
+      "vaccination": "MMR (Measles-Mumps-Rubella) vaccine is part of India's universal immunization programme."
+    },
+    "hindi": {
+      "symptoms_list": ["लाल दाने", "बहती नाक", "लाल आंखें", "खांसी", "तेज बुखार", "प्रकाश संवेदनशीलता"],
+      "symptoms": "तेज बुखार, खांसी, बहती नाक, लाल आंखें और चेहरे से शरीर तक फैलने वाले लाल दाने।",
+      "prevention": "MMR टीका सबसे प्रभावी रोकथाम। संक्रमित व्यक्तियों से संपर्क से बचें।",
+      "medicine": "सहायक देखभाल, विटामिन A सप्लीमेंट।",
+      "vaccination": "MMR टीका भारत के सार्वभौमिक टीकाकरण कार्यक्रम का हिस्सा।"
+    },
+    "tamil": {
+      "symptoms_list": ["சிவப்பு தடிப்பு", "ஒழுகும் மூக்கு", "சிவந்த கண்கள்", "இருமல்", "உயர் காய்ச்சல்", "ஒளி உணர்திறன்"],
+      "symptoms": "உயர் காய்ச்சல், இருமல், ஒழுகும் மூக்கு, சிவந்த கண்கள் மற்றும் முகத்திலிருந்து உடலுக்கு பரவும் சிவப்பு தடிப்பு.",
+      "prevention": "MMR தடுப்பூசி மிகவும் பயனுள்ளது.",
+      "medicine": "ஆதரவு சிகிச்சை, வைட்டமின் A சப்ளிமெண்ட்.",
+      "vaccination": "MMR தடுப்பூசி இந்தியாவின் உலகளாவிய தடுப்பூசி திட்டத்தின் ஒரு பகுதி."
+    },
+    "odia": {
+      "symptoms_list": ["ଲାଲ ଦାଗ", "ନାକ ବୋହିବା", "ଲାଲ ଆଖି", "କାଶ", "ଉଚ୍ଚ ଜ୍ୱର", "ଆଲୋକ ସଂବେଦନଶୀଳତା"],
+      "symptoms": "ଉଚ୍ଚ ଜ୍ୱର, କାଶ, ନାକ ବୋହିବା, ଲାଲ ଆଖି ଏବଂ ମୁହଁରୁ ଶରୀରରେ ବ୍ୟାପୁଥିବା ଲାଲ ଦାଗ।",
+      "prevention": "MMR ଟୀକା ସବୁଠୁ ପ୍ରଭାବଶାଳୀ। ସଂକ୍ରମିତ ବ୍ୟକ୍ତିଙ୍କ ସଂସ୍ପର୍ଶ ଏଡ଼ାନ୍ତୁ।",
+      "medicine": "ସହାୟକ ଯତ୍ନ, ଭିଟାମିନ A ସପ୍ଲିମେଣ୍ଟ।",
+      "vaccination": "MMR ଟୀକା ଭାରତର ସର୍ବଜନୀନ ଟୀକାକରଣ କାର୍ଯ୍ୟକ୍ରମର ଅଂଶ।"
+    }
+  },
+
+  "pneumonia": {
+    "english": {
+      "symptoms_list": ["chest pain", "difficulty breathing", "rapid breathing", "cough with phlegm", "chills", "fatigue", "shortness of breath"],
+      "symptoms": "Chest pain, difficulty breathing, rapid breathing, cough with phlegm and chills.",
+      "prevention": "Get vaccinated, avoid smoking, maintain hygiene and strengthen immunity.",
+      "medicine": "Antibiotics for bacterial pneumonia. Antivirals for viral pneumonia. Supportive care.",
+      "vaccination": "Pneumococcal vaccine (PCV) recommended especially for children and elderly."
+    },
+    "hindi": {
+      "symptoms_list": ["सीने में दर्द", "सांस लेने में कठिनाई", "तेज सांस", "बलगम के साथ खांसी", "ठंड लगना", "थकान", "सांस की तकलीफ"],
+      "symptoms": "सीने में दर्द, सांस लेने में कठिनाई, बलगम के साथ खांसी और ठंड लगना।",
+      "prevention": "टीका लगवाएं, धूम्रपान से बचें, स्वच्छता बनाए रखें।",
+      "medicine": "बैक्टीरियल निमोनिया के लिए एंटीबायोटिक्स। वायरल के लिए एंटीवायरल।",
+      "vaccination": "न्यूमोकोकल वैक्सीन (PCV) विशेषकर बच्चों और बुजुर्गों के लिए।"
+    },
+    "tamil": {
+      "symptoms_list": ["மார்பு வலி", "சுவாச சிரமம்", "வேகமான சுவாசம்", "சளியுடன் இருமல்", "குளிர்", "சோர்வு", "மூச்சுத்திணறல்"],
+      "symptoms": "மார்பு வலி, சுவாச சிரமம், சளியுடன் இருமல் மற்றும் குளிர்.",
+      "prevention": "தடுப்பூசி போடவும், புகைபிடிப்பை தவிர்க்கவும், சுகாதாரத்தை பேணவும்.",
+      "medicine": "பாக்டீரியல் நிமோனியாவுக்கு நுண்ணுயிர் எதிர்ப்பிகள்.",
+      "vaccination": "நிமோகாக்கல் தடுப்பூசி (PCV) குழந்தைகள் மற்றும் முதியோர்களுக்கு."
+    },
+    "odia": {
+      "symptoms_list": ["ଛାତି ଯନ୍ତ୍ରଣା", "ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ", "ଦ୍ରୁତ ଶ୍ୱାସ", "କଫ ସହ କାଶ", "ଥଣ୍ଡା", "କ୍ଲାନ୍ତି", "ଶ୍ୱାସକଷ୍ଟ"],
+      "symptoms": "ଛାତି ଯନ୍ତ୍ରଣା, ଶ୍ୱାସ ନେବାରେ କଷ୍ଟ, କଫ ସହ କାଶ ଓ ଥଣ୍ଡା।",
+      "prevention": "ଟୀକା ନିଅନ୍ତୁ, ଧୂମ୍ରପାନ ଛାଡ଼ନ୍ତୁ, ସ୍ୱଚ୍ଛତା ବଜାୟ ରଖନ୍ତୁ।",
+      "medicine": "ବ୍ୟାକ୍ଟେରିଆ ନ୍ୟୁମୋନିଆ ପାଇଁ ଆଣ୍ଟିବାୟୋଟିକ୍।",
+      "vaccination": "ନ୍ୟୁମୋକୋକାଲ ଟୀକା (PCV) ଶିଶୁ ଓ ବୃଦ୍ଧଙ୍କ ପାଇଁ।"
+    }
+  },
+
+  "diarrhea": {
+    "english": {
+      "symptoms_list": ["loose stools", "frequent stools", "stomach cramps", "bloating", "nausea", "dehydration", "vomiting"],
+      "symptoms": "Loose or watery stools, stomach cramps, nausea, bloating and dehydration.",
+      "prevention": "Drink clean water, wash hands before eating, maintain food hygiene.",
+      "medicine": "ORS to prevent dehydration. Zinc supplements for children. Consult doctor if severe.",
+      "vaccination": "Rotavirus vaccine prevents a common cause of diarrhea in children."
+    },
+    "hindi": {
+      "symptoms_list": ["ढीला मल", "बार-बार मल", "पेट में ऐंठन", "पेट फूलना", "मतली", "डिहाइड्रेशन", "उल्टी"],
+      "symptoms": "ढीले या पानी जैसे मल, पेट में ऐंठन, मतली, पेट फूलना और डिहाइड्रेशन।",
+      "prevention": "साफ पानी पिएं, खाने से पहले हाथ धोएं, खाद्य स्वच्छता बनाए रखें।",
+      "medicine": "डिहाइड्रेशन से बचाव के लिए ORS। गंभीर होने पर डॉक्टर से मिलें।",
+      "vaccination": "रोटावायरस टीका बच्चों में दस्त के एक सामान्य कारण को रोकता है।"
+    },
+    "tamil": {
+      "symptoms_list": ["தளர்வான மலம்", "அடிக்கடி மலம்", "வயிற்றுப் பிடிப்பு", "வீக்கம்", "குமட்டல்", "நீரிழப்பு", "வாந்தி"],
+      "symptoms": "தளர்வான அல்லது நீர்போன்ற மலம், வயிற்றுப் பிடிப்பு, குமட்டல் மற்றும் நீரிழப்பு.",
+      "prevention": "சுத்தமான தண்ணீர் குடிக்கவும், கைகளை கழுவவும்.",
+      "medicine": "நீரிழப்பைத் தடுக்க ORS. கடுமையான நிலையில் மருத்துவர் ஆலோசனை.",
+      "vaccination": "ரோட்டாவைரஸ் தடுப்பூசி குழந்தைகளில் வயிற்றுப்போக்கின் பொதுவான காரணத்தை தடுக்கிறது."
+    },
+    "odia": {
+      "symptoms_list": ["ଢିଲା ଝାଡ଼ା", "ବାରମ୍ବାର ଝାଡ଼ା", "ପେଟ କାମୁଡ଼ା", "ପେଟ ଫୁଲା", "ବାକି", "ଡିହାଇଡ୍ରେସନ୍", "ବାନ୍ତି"],
+      "symptoms": "ଢିଲା ବା ପାଣି ଭଳି ଝାଡ଼ା, ପେଟ କାମୁଡ଼ା, ବାକି ଓ ଡିହାଇଡ୍ରେସନ୍।",
+      "prevention": "ଶୁଦ୍ଧ ପାଣି ପିଅନ୍ତୁ, ଖାଇବା ପୂର୍ବରୁ ହାତ ଧୋଅନ୍ତୁ।",
+      "medicine": "ଡିହାଇଡ୍ରେସନ୍ ରୋକିବା ପାଇଁ ORS। ଗୁରୁତର ହେଲେ ଡାକ୍ତରଙ୍କ ପରାମର୍ଶ।",
+      "vaccination": "ରୋଟାଭାଇରସ୍ ଟୀକା ଶିଶୁମାନଙ୍କରେ ଝାଡ଼ା ର ଏକ ସାଧାରଣ କାରଣ ରୋକେ।"
+    }
+  }
+}
