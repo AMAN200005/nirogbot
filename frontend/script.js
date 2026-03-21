@@ -331,18 +331,16 @@ async function askLLM(userText){
   const langInstruction = languageInstructions[lang] || languageInstructions["english"];
 
   try {
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
-  },
-  body: JSON.stringify({
-    model: "llama3-8b-8192",
-    messages: [
-      {
+    const response = await fetch("https://nirogbot-backend.onrender.com/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        messages: [
+          {
             role: "system",
-            content: `You are HealthBot, a public health awareness assistant.
+            content: `You are NirogBot, a public health awareness assistant.
 Help users understand symptoms, diseases, prevention and general health queries.
 Keep responses concise, friendly and informative.
 Always remind users to consult a doctor for proper diagnosis.
