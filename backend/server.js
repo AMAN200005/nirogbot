@@ -6,9 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const GROQ_API_KEY = process.env.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;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
-// TEST ROUTE
 app.get("/", (req, res) => {
   res.json({
     status: "NirogBot backend is running!",
@@ -17,25 +16,27 @@ app.get("/", (req, res) => {
   });
 });
 
-// CHAT ROUTE
 app.post("/api/chat", async (req, res) => {
   try {
     const { message, language } = req.body;
 
+    if (!message) return res.status(400).json({ error: "Message is required" });
+    if (!GROQ_API_KEY) return res.status(500).json({ error: "API key not configured" });
+
     const languageInstructions = {
       "english": "Always respond in English.",
-      "hindi": "हमेशा हिंदी में जवाब दें। (Always respond in Hindi language only.)",
-      "odia": "ସର୍ବଦା ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ। (Always respond in Odia language only.)",
-      "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும். (Always respond in Tamil language only.)"
+      "hindi": "हमेशा हिंदी में जवाब दें।",
+      "odia": "ସର୍ବଦା ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ।",
+      "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும்."
     };
 
     const langInstruction = languageInstructions[language] || languageInstructions["english"];
 
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${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}`
+        "Authorization": `Bearer ${GROQ_API_KEY}`
       },
       body: JSON.stringify({
         model: "llama3-8b-8192",
@@ -46,7 +47,7 @@ app.post("/api/chat", async (req, res) => {
 Help users understand symptoms, diseases, prevention and general health queries.
 Keep responses concise, friendly and informative.
 Always remind users to consult a doctor for proper diagnosis.
-Do not prescribe specific medications. Stick to general WHO-approved health guidance.
+Do not prescribe specific medications.
 ${langInstruction}`
           },
           { role: "user", content: message }
@@ -54,12 +55,18 @@ ${langInstruction}`
       })
     });
 
-    const data = await response.json();
-    res.json(data);
+    if (!groqRes.ok) {
+      const errText = await groqRes.text();
+      console.error("Groq API error:", groqRes.status, errText);
+      return res.status(502).json({ error: "Groq API error", detail: errText });
+    }
+
+    const data = await groqRes.json();
+    res.json(data); // ✅ send full response so frontend data.choices[0].message.content works
 
   } catch(err) {
-    console.error(err);
-    res.status(500).json({ error: "Server error" });
+    console.error("Chat route error:", err.message);
+    res.status(500).json({ error: "Server error", detail: err.message });
   }
 });
 
