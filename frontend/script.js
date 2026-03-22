@@ -1,3 +1,21 @@
+function setUserProfile(name, email) {
+  const initial = name ? name[0].toUpperCase() : "G";
+  document.getElementById("sidebar-avatar").textContent = initial;
+  document.getElementById("sidebar-name").textContent = name || "Guest User";
+  document.getElementById("popup-avatar").textContent = initial;
+  document.getElementById("popup-name").textContent = name || "Guest User";
+
+  const emailEl = document.getElementById("popup-email");
+  if (email) {
+    emailEl.textContent = email;
+    emailEl.style.display = "block";
+  } else {
+    emailEl.style.display = "none";
+  }
+}
+
+setUserProfile(null, null);
+
 let diseasesData = {};
 let trendCount = {};
 let alertedDiseases = {};
