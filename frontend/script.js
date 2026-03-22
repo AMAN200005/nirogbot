@@ -530,6 +530,12 @@ function closeAllMenus(){
     m.classList.remove("active");
   });
 }
+// Close chat menu when clicking outside
+document.addEventListener("click", function(e) {
+  if (!e.target.closest(".chat-menu") && !e.target.closest(".three-dot-btn")) {
+    closeAllMenus();
+  }
+});
 
 function deleteChat(id){
   if(confirm("Delete this chat?")){
