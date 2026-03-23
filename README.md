@@ -8,7 +8,7 @@ An AI-powered multilingual public health chatbot built for Smart India Hackathon
 
 ## Features
 - 🌐 Multilingual support (English, Hindi, Odia, Tamil)
-- 🤒 Symptom detection for 16+ diseases
+- 🤒 Symptom detection for diseases
 - 🤖 AI-powered responses via LLM
 - 🚨 Real-time outbreak alert system
 - 📊 Analytics dashboard
@@ -23,4 +23,4 @@ An AI-powered multilingual public health chatbot built for Smart India Hackathon
 Coming soon...
 
 ## Team
-- Aman and team
+- Team NirogBot
