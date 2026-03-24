@@ -30,7 +30,7 @@ app.post("/api/chat", async (req, res) => {
       "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும்."
     };
 
-    const langInstruction = languageInstructions[language] || languageInstructions["english"];
+    const langInstruction = languageInstructions[language] || languageInstructions["english"]; 
 
     const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
