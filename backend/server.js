@@ -26,7 +26,7 @@ app.post("/api/chat", async (req, res) => {
     const languageInstructions = {
       "english": "Always respond in English.",
       "hindi": "हमेशा हिंदी में जवाब दें।",
-      "odia": "ସର୍ବଦା ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ।",
+      "odia": "You MUST respond ONLY in Odia language (ଓଡ଼ିଆ). Do not use Bengali, Hindi or any other language. Every single word must be in Odia script. ସର୍ବଦା କେବଳ ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ।",
       "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும்."
     };
 
@@ -43,12 +43,13 @@ app.post("/api/chat", async (req, res) => {
         messages: [
           {
             role: "system",
-            content: `You are NirogBot, a public health awareness assistant.
+            content: `IMPORTANT: You must ALWAYS respond in the language specified at the end of this prompt. Never switch languages under any circumstances.
+You are NirogBot, a public health awareness assistant.
 Help users understand symptoms, diseases, prevention and general health queries.
 Keep responses concise, friendly and informative.
 Always remind users to consult a doctor for proper diagnosis.
 Do not prescribe specific medications.
-${langInstruction}`
+LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`
           },
           { role: "user", content: message }
         ]
