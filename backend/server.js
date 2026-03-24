@@ -70,5 +70,22 @@ ${langInstruction}`
   }
 });
 
+// In-memory trend store
+let globalTrends = {};
+
+// POST /api/trend — increment disease count
+app.post("/api/trend", (req, res) => {
+  const { disease } = req.body;
+  if (!disease) return res.status(400).json({ error: "Disease required" });
+  if (!globalTrends[disease]) globalTrends[disease] = 0;
+  globalTrends[disease]++;
+  res.json({ disease, count: globalTrends[disease] });
+});
+
+// GET /api/trends — get all counts
+app.get("/api/trends", (req, res) => {
+  res.json(globalTrends);
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`NirogBot backend running on port ${PORT}`));
