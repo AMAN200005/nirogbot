@@ -31,6 +31,11 @@ app.post("/api/chat", async (req, res) => {
     };
 
     const langInstruction = languageInstructions[language] || languageInstructions["english"]; 
+    
+// better model for Indic languages
+const model = (language === "odia" || language === "hindi" || language === "tamil")
+  ? "llama-3.3-70b-versatile"
+  : "llama-3.1-8b-instant";
 
     const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
