@@ -26,7 +26,7 @@ app.post("/api/chat", async (req, res) => {
     const languageInstructions = {
       "english": "Always respond in English.",
       "hindi": "हमेशा हिंदी में जवाब दें।",
-      "odia": "You MUST respond ONLY in Odia language (ଓଡ଼ିଆ). Do not use Bengali, Hindi or any other language. Every single word must be in Odia script. ସର୍ବଦା କେବଳ ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ।",
+      "odia": "You MUST respond ONLY in Odia language (ଓଡ଼ିଆ). Do not use Bengali, Hindi or any other language. Every single word must be in Odia script. Do NOT use any markdown formatting like ** or * — use plain text only. ସର୍ବଦା କେବଳ ଓଡ଼ିଆ ଭାଷାରେ ଉତ୍ତର ଦିଅନ୍ତୁ।",
       "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும்."
     };
 
