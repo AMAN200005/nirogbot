@@ -87,7 +87,7 @@ function addMessage(text, type){
 
   const bubble = document.createElement("div");
   bubble.className = "message " + type;
-  bubble.innerText = text;
+  bubble.innerHTML = formatMarkdown(text);
 
   if(type === "user"){
     const avatar = document.createElement("div");
