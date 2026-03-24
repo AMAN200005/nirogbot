@@ -236,12 +236,29 @@ function botReply(text, type, delay){
 }
 
 /* TRENDING */
-function updateTrend(disease){
-  if(!trendCount[disease]) trendCount[disease] = 0;
+
+function updateTrend(disease) {
+  // Still update locally for dashboard
+  if (!trendCount[disease]) trendCount[disease] = 0;
   trendCount[disease]++;
   localStorage.setItem("healthbot_trends", JSON.stringify(trendCount));
   renderTrends();
-  checkOutbreakAlert(disease);
+
+  // Send to backend for global tracking
+  fetch("https://nirogbot.onrender.com/api/trend", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ disease })
+  })
+  .then(r => r.json())
+  .then(data => {
+    // Use global count for outbreak alert
+    checkOutbreakAlert(disease, data.count);
+  })
+  .catch(() => {
+    // Fallback to local count if backend is down
+    checkOutbreakAlert(disease, trendCount[disease]);
+  });
 }
 
 function renderTrends(){
@@ -273,25 +290,19 @@ function getAlertPrecautions(disease){
   return "🛡️ Maintain hygiene, stay hydrated and consult a doctor immediately.";
 }
 
-function checkOutbreakAlert(disease){
+function checkOutbreakAlert(disease, count) {
   const threshold = 3;
-  if(trendCount[disease] >= threshold && trendCount[disease] % threshold === 0){
-    setTimeout(function(){
+  if (count >= threshold && count % threshold === 0) {
+    setTimeout(function() {
       showFlashBanner(disease);
-      setTimeout(function(){
+      setTimeout(function() {
         const alertMessage =
 `🚨 OUTBREAK ALERT 🚨
-
-⚠️ ${disease.toUpperCase()} has been reported ${trendCount[disease]} times recently in your area.
-
+⚠️ ${disease.toUpperCase()} has been reported ${count} times recently across users.
 This may indicate a potential outbreak situation. Please take the following precautions immediately:
-
 ${getAlertPrecautions(disease)}
-
 📞 Contact your nearest health center or call the National Health Helpline: 104
-
 🏥 This alert has been generated based on community-reported symptoms. Stay safe and spread awareness.`;
-
         addMessage(alertMessage, "alert");
       }, 5000);
     }, 2000);
