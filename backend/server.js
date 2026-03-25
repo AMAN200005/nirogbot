@@ -30,12 +30,49 @@ app.post("/api/chat", async (req, res) => {
       "tamil": "எப்போதும் தமிழில் மட்டுமே பதில் அளிக்கவும்."
     };
 
-    const langInstruction = languageInstructions[language] || languageInstructions["english"]; 
-    
-// better model for Indic languages
-const model = (language === "odia" || language === "hindi" || language === "tamil")
-  ? "llama-3.3-70b-versatile"
-  : "llama-3.1-8b-instant";
+    const langInstruction = languageInstructions[language] || languageInstructions["english"];
+
+    const systemPrompt = `IMPORTANT: You must ALWAYS respond in the language specified at the end of this prompt. Never switch languages under any circumstances.
+You are NirogBot, a public health awareness assistant.
+Help users understand symptoms, diseases, prevention and general health queries.
+Keep responses concise, friendly and informative.
+Always remind users to consult a doctor for proper diagnosis.
+Do not prescribe specific medications.
+LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`;
+
+    // Use Gemini for Odia
+    if (language === "odia") {
+      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{
+            parts: [{
+              text: `${systemPrompt}\n\nUser: ${message}`
+            }]
+          }]
+        })
+      });
+
+      if (!geminiRes.ok) {
+        const errText = await geminiRes.text();
+        console.error("Gemini API error:", geminiRes.status, errText);
+        return res.status(502).json({ error: "Gemini API error", detail: errText });
+      }
+
+      const geminiData = await geminiRes.json();
+      const reply = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "No response from model.";
+
+      // Return in same format as Groq so frontend works unchanged
+      return res.json({
+        choices: [{ message: { content: reply } }]
+      });
+    }
+
+    // Use Groq for all other languages
+    const model = (language === "hindi" || language === "tamil")
+      ? "llama-3.3-70b-versatile"
+      : "llama-3.1-8b-instant";
 
     const groqRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
@@ -44,18 +81,9 @@ const model = (language === "odia" || language === "hindi" || language === "tami
         "Authorization": `Bearer ${GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
+        model: model,
         messages: [
-          {
-            role: "system",
-            content: `IMPORTANT: You must ALWAYS respond in the language specified at the end of this prompt. Never switch languages under any circumstances.
-You are NirogBot, a public health awareness assistant.
-Help users understand symptoms, diseases, prevention and general health queries.
-Keep responses concise, friendly and informative.
-Always remind users to consult a doctor for proper diagnosis.
-Do not prescribe specific medications.
-LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`
-          },
+          { role: "system", content: systemPrompt },
           { role: "user", content: message }
         ]
       })
@@ -68,7 +96,7 @@ LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`
     }
 
     const data = await groqRes.json();
-    res.json(data); // send full response so frontend data.choices[0].message.content works
+    res.json(data);
 
   } catch(err) {
     console.error("Chat route error:", err.message);
