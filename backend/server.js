@@ -68,7 +68,7 @@ LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`
     }
 
     const data = await groqRes.json();
-    res.json(data); // ✅ send full response so frontend data.choices[0].message.content works
+    res.json(data); // send full response so frontend data.choices[0].message.content works
 
   } catch(err) {
     console.error("Chat route error:", err.message);
