@@ -538,13 +538,14 @@ body{
 }
 
 /* INPUT BAR */
+
 .input-area{
   position: fixed;
   bottom: 0;
   left: 240px;
   right: 0;
-  background: linear-gradient(135deg, #1a3a5c 0%, #0d5c3a 100%);
-  border-top: 1px solid rgba(255,255,255,0.12);
+  background: transparent;
+  border-top: none;
   padding: 14px 18px;
   display: flex;
   gap: 12px;
