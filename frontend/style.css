@@ -1071,14 +1071,23 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
   }
 
   .history-list {
-    max-height: calc(100vh - 320px);
+    flex: 1;
+    max-height: none;
+    overflow-y: auto;
   }
 
   .account-section {
-    position: relative;
+    position: relative !important;
+    bottom: auto !important;
     margin-top: auto;
+    flex-shrink: 0;
   }
 }
