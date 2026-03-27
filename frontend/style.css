@@ -1063,3 +1063,22 @@ body{
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* Fix account section on mobile */
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .history-list {
+    max-height: calc(100vh - 320px);
+  }
+
+  .account-section {
+    position: relative;
+    margin-top: auto;
+  }
+}
