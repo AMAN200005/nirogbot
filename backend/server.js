@@ -43,17 +43,22 @@ LANGUAGE INSTRUCTION (STRICTLY FOLLOW): ${langInstruction}`;
 
     // Use Gemini for Odia
     if (language === "odia") {
-      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-002:generateContent?key=${GEMINI_API_KEY}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{
-            parts: [{
-              text: `${systemPrompt}\n\nUser: ${message}`
-            }]
-          }]
-        })
-      });
+      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`, {
+  method: "POST",
+  headers: { 
+    "Content-Type": "application/json",
+    "x-goog-api-key": GEMINI_API_KEY
+  },
+  body: JSON.stringify({
+    system_instruction: {
+      parts: [{ text: systemPrompt }]
+    },
+    contents: [{
+      parts: [{ text: message }],
+      role: "user"
+    }]
+  })
+});
 
       if (!geminiRes.ok) {
         const errText = await geminiRes.text();
