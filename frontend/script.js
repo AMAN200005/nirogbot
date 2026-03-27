@@ -155,7 +155,7 @@ function detectDisease(text){
     "tb": "tuberculosis",
     "aids": "hiv",
     "hiv aids": "hiv",
-    "jaundice": "hepatitis",
+    "jaundice": "jaundice",
     "filarial": "filaria",
     "chicken pox": "chickenpox"
   };
