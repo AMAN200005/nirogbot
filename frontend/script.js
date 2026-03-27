@@ -209,32 +209,62 @@ function detectDisease(text){
 }
 
 /* SHOW DISEASE INFO */
+
 function showDisease(disease, mode){
   const lang = document.getElementById("language").value;
   const langData = diseasesData[disease][lang];
   const info = langData || diseasesData[disease]["english"];
 
-  const heading = mode === "direct"
-    ? `ℹ️ Here is information about ${disease.toUpperCase()}`
-    : `⚠️ Based on your symptoms, this may indicate: ${disease.toUpperCase()}`;
+  const labels = {
+    "english": {
+      heading_direct: `ℹ️ Here is information about ${disease.toUpperCase()}`,
+      heading_symptom: `⚠️ Based on your symptoms, this may indicate: ${disease.toUpperCase()}`,
+      symptoms: "🤒 Symptoms",
+      prevention: "🛡️ Prevention",
+      medicine: "💊 Medicine"
+    },
+    "hindi": {
+      heading_direct: `ℹ️ ${disease.toUpperCase()} के बारे में जानकारी`,
+      heading_symptom: `⚠️ आपके लक्षणों के आधार पर यह हो सकता है: ${disease.toUpperCase()}`,
+      symptoms: "🤒 लक्षण",
+      prevention: "🛡️ बचाव",
+      medicine: "💊 दवाई"
+    },
+    "odia": {
+      heading_direct: `ℹ️ ${disease.toUpperCase()} ବିଷୟରେ ସୂଚନା`,
+      heading_symptom: `⚠️ ଆପଣଙ୍କ ଲକ୍ଷଣ ଅନୁଯାୟୀ ଏହା ହୋଇପାରେ: ${disease.toUpperCase()}`,
+      symptoms: "🤒 ଲକ୍ଷଣ",
+      prevention: "🛡️ ପ୍ରତିରୋଧ",
+      medicine: "💊 ଔଷଧ"
+    },
+    "tamil": {
+      heading_direct: `ℹ️ ${disease.toUpperCase()} பற்றிய தகவல்`,
+      heading_symptom: `⚠️ உங்கள் அறிகுறிகளின் அடிப்படையில் இது இருக்கலாம்: ${disease.toUpperCase()}`,
+      symptoms: "🤒 அறிகுறிகள்",
+      prevention: "🛡️ தடுப்பு",
+      medicine: "💊 மருந்து"
+    }
+  };
 
   const disclaimers = {
     "english": "⚕️ Note: This information is AI-generated. Please do not take any medication without prior consultation with a certified doctor.",
     "hindi": "⚕️ नोट: यह जानकारी AI द्वारा उत्पन्न है। कृपया किसी प्रमाणित डॉक्टर से परामर्श किए बिना कोई दवा न लें।",
     "odia": "⚕️ ଜ୍ଞାତବ୍ୟ: ଏହି ତଥ୍ୟ AI ଦ୍ୱାରା ପ୍ରସ୍ତୁତ। ଦୟାକରି କୌଣସି ଡାକ୍ତରଙ୍କ ପରାମର୍ଶ ବିନା କୌଣସି ଔଷଧ ଗ୍ରହଣ କରନ୍ତୁ ନାହିଁ।",
-    "tamil": "⚕️ குறிப்பு: இந்த தகவல் AI மூலம் உருவாக்கப்பட்டது. சான்றளிக்கப்பட்ட மருத்துவரின் ஆலோசனை இல்லாமல் எந்த மருந்தும் எடுக்க வேண்டாம்।"
+    "tamil": "⚕️ குறிப்பு: இந்த தகவல் AI மூலம் உருவாக்கப்பட்டது. சான்றளிக்கப்பட்ட மருத்துவரின் ஆலோசனை இல்லாமல் எந்த மருந்தும் எடுக்க வேண்டாம்."
   };
 
+  const L = labels[lang] || labels["english"];
   const disclaimer = disclaimers[lang] || disclaimers["english"];
+  const heading = mode === "direct" ? L.heading_direct : L.heading_symptom;
 
   const response =
 `${heading}
 
-🤒 Symptoms: ${info.symptoms}
+${L.symptoms}: ${info.symptoms}
 
-🛡️ Prevention: ${info.prevention}
+${L.prevention}: ${info.prevention}
 
-💊 Medicine: ${info.medicine}
+${L.medicine}: ${info.medicine}
 
 ─────────────────────
 ${disclaimer}`;
