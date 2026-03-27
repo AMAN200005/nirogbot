@@ -84,6 +84,25 @@ function formatMarkdown(text) {
     .join('<br>');
 }
 
+/* TYPEWRITER EFFECT */
+
+function typeWriter(element, text, speed = 15) {
+  element.innerHTML = "";
+  let i = 0;
+  const interval = setInterval(() => {
+    if (i < text.length) {
+      element.innerHTML = formatMarkdown(text.substring(0, i + 1));
+      i++;
+      // Auto scroll while typing
+      const main = document.querySelector(".main");
+      main.scrollTop = main.scrollHeight;
+    } else {
+      clearInterval(interval);
+    }
+  }, speed);
+}
+
+
 /* ADD MESSAGE */
 
 function addMessage(text, type){
@@ -94,7 +113,12 @@ function addMessage(text, type){
 
   const bubble = document.createElement("div");
   bubble.className = "message " + type;
-  bubble.innerHTML = formatMarkdown(text);
+
+  if (type === "bot") {
+    typeWriter(bubble, text, 15);
+  } else {
+    bubble.innerHTML = formatMarkdown(text);
+  }
 
   if(type === "user"){
     const avatar = document.createElement("div");
